@@ -49,12 +49,17 @@ body {
     align-items: center;
 }
 
-.logo-image {
+.logo-circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit: cover;
-    display: block;
+    background: var(--accent-red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .nav-menu {
@@ -199,14 +204,6 @@ body {
     width: 100%;
     max-width: 400px;
     height: auto;
-}
-
-.hero-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: contain;
-    display: block;
 }
 
 /* Section Styles */
@@ -681,20 +678,6 @@ body {
     color: var(--accent-red);
 }
 
-.contact-photo {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 2rem;
-}
-
-.contact-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    object-fit: cover;
-    display: block;
-}
-
 .contact-social {
     display: flex;
     flex-direction: column;
@@ -713,9 +696,6 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
-    width: 100%;
-    text-align: center;
-    max-width: 250px;
 }
 
 .social-link:hover {
